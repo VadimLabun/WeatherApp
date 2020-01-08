@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WeatherApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nav-Gn-GaI" customClass="ParticlesView" customModule="WeatherApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="fillProportionally" spacing="88" translatesAutoresizingMaskIntoConstraints="NO" id="3QU-h9-DP2">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vKI-1e-920">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="31"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minsk, Belarusia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nqw-AT-OGa">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="31"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="jfQ-E9-HBt">
+                                                <rect key="frame" x="0.0" y="119" width="414" height="89.5"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clear-day" translatesAutoresizingMaskIntoConstraints="NO" id="YSZ-CG-VEq">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="89.5"/>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="27c-AH-xva">
+                                                <rect key="frame" x="0.0" y="296.5" width="414" height="31"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="740 mm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j7q-6E-344">
+                                                        <rect key="frame" x="0.0" y="0.0" width="116.5" height="31"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="5sv-R2-ADz">
+                                                        <rect key="frame" x="148.5" y="0.0" width="117" height="31"/>
+                                                    </activityIndicatorView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wej-gX-XST">
+                                                        <rect key="frame" x="297.5" y="0.0" width="116.5" height="31"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D4O-bT-neD">
+                                                <rect key="frame" x="0.0" y="415.5" width="414" height="108.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20˚C" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.25" translatesAutoresizingMaskIntoConstraints="NO" id="940-IN-7gD">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="108.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="84"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fHn-Jj-U4k">
+                                                <rect key="frame" x="0.0" y="612" width="414" height="39.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feels like: 17" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9sy-7e-QkG">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="39.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dJp-30-5ly">
+                                                <rect key="frame" x="0.0" y="739.5" width="414" height="78.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ugx-Tj-jt0">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="78.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <state key="normal" title="Refresh">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="refreshAktionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yIy-wt-TiZ"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="3QU-h9-DP2" secondAttribute="trailing" id="2Q2-UV-m2G"/>
+                                    <constraint firstAttribute="bottom" secondItem="3QU-h9-DP2" secondAttribute="bottom" id="Ibf-5O-EUV"/>
+                                    <constraint firstItem="3QU-h9-DP2" firstAttribute="top" secondItem="Nav-Gn-GaI" secondAttribute="top" id="dLq-f4-qDo"/>
+                                    <constraint firstItem="3QU-h9-DP2" firstAttribute="leading" secondItem="Nav-Gn-GaI" secondAttribute="leading" id="wD6-1m-M2g"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.29178775243779365" green="0.94743180038189678" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Nav-Gn-GaI" secondAttribute="bottom" id="7FS-VE-q3d"/>
+                            <constraint firstItem="Nav-Gn-GaI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="K6f-jY-gq4"/>
+                            <constraint firstItem="Nav-Gn-GaI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="KiD-uz-Zdw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Nav-Gn-GaI" secondAttribute="trailing" id="ucz-2G-GUW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="LocationLable" destination="Nqw-AT-OGa" id="Nf0-gR-jX7"/>
+                        <outlet property="activityIndicator" destination="5sv-R2-ADz" id="1kH-r5-QmI"/>
+                        <outlet property="appirentTemperatyreLablr" destination="9sy-7e-QkG" id="ssQ-MA-Muf"/>
+                        <outlet property="humidityLable" destination="wej-gX-XST" id="zy2-t8-ISd"/>
+                        <outlet property="imageView" destination="YSZ-CG-VEq" id="dZ5-16-VAp"/>
+                        <outlet property="presureLeble" destination="j7q-6E-344" id="tAK-kw-cW9"/>
+                        <outlet property="refreshButton" destination="Ugx-Tj-jt0" id="yVh-CH-JPC"/>
+                        <outlet property="temperatyreLable" destination="940-IN-7gD" id="hiY-7D-aGx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="99.776785714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="clear-day" width="83" height="83"/>
+    </resources>
+</document>
